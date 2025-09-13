@@ -19,7 +19,7 @@ Static legal pages ready for GitHub Pages.
 4. Your site will be live at `https://<username>.github.io/<repo>/`.
 
 Set your in‑app links to:
-- Privacy Policy: `https://<username>.github.io/<repo>/privacy.html`
-- Terms of Use: `https://<username>.github.io/<repo>/terms.html`
-- Licenses: `https://<username>.github.io/<repo>/licenses.html`
+- Privacy Policy: `https://USERNAME.github.io/REPO/privacy.html`
+- Terms of Use: `https://USERNAME.github.io/REPO/terms.html`
+- Licenses: `https://USERNAME.github.io/REPO/licenses.html`
 - Support: `mailto:auzecode@outlook.com`
