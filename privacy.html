@@ -1,61 +1,64 @@
 <!doctype html>
 <html lang="en"><head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Privacy Policy • AuzeCS</title>
+<title>Privacy Policy • AuzeCS (PrepCoach)</title>
 <link rel="stylesheet" href="assets/style.css">
 </head><body>
 <div class="container">
   <div class="card">
     <span class="badge">Privacy</span>
     <h1>Privacy Policy</h1>
-    <p class="muted">Effective September 13, 2025</p>
+    <p class="muted">Effective October 3, 2025</p>
 
     <h2>Who we are</h2>
-    <p>AuzeCS is an interview practice app. Contact: <a href="mailto:auzecode@outlook.com">auzecode@outlook.com</a>.</p>
+    <p>AuzeCS operates the <b>PrepCoach</b> mobile app (the “App”). Contact: <a href="mailto:auzecode@outlook.com">auzecode@outlook.com</a>.</p>
 
-    <h2>Data we collect</h2>
+    <h2>What we collect</h2>
     <ul>
-      <li><b>App data you provide</b>: display name, answers in interview sessions.</li>
-      <li><b>Microphone audio</b> to run mock interviews. (Permission is requested by iOS.)</li>
-      <li><b>Transcripts</b> of your answers to create feedback.</li>
-      <li><b>Purchase info</b> for credits via Apple (StoreKit). We do not receive your full payment details.</li>
-      <li><b>Optional analytics</b> if you enable “Share anonymous usage analytics”.</li>
-      <li><b>AI processing</b>: Your answers in interview sessions are sent to OpenAI’s ChatGPT API to generate questions and feedback. We do not share personal info beyond what is needed for this service.</li>
+      <li><b>Account data (on device)</b>: email, display name, a local profile ID. Passwords are salted+hashed and stored in the iOS Keychain (we never store plaintext).</li>
+      <li><b>Interview content</b>: questions/answers, transcripts, and summaries saved <b>on your device</b> (UserDefaults) so you can review sessions.</li>
+      <li><b>Voice</b>: if you use the mic, audio is recorded on device and may be sent to our server solely to transcribe your answer.</li>
+      <li><b>Purchases</b>: Apple processes payments (StoreKit). We receive product IDs and success state to update your credit balance; we do not receive your card details.</li>
+      <li><b>Optional switches</b>: “Share analytics” and “Allow tracking” are user-controlled. If off, we do not send this data. The App functions without tracking.</li>
     </ul>
 
     <h2>How we use data</h2>
     <ul>
-      <li>Run interviews, create transcripts and summaries.</li>
-      <li>Provide and improve AuzeCS, prevent abuse, and support you.</li>
-      <li>Process purchases and maintain your credit balance.</li>
-      <li>Send text and audio to OpenAI’s ChatGPT API to provide AI-based interview questions and feedback.</li>
+      <li>Run mock interviews, generate feedback, and maintain your credit balance.</li>
+      <li>Transcribe voice answers when you choose to use the mic.</li>
+      <li>Operate, secure, and improve the App; prevent abuse; provide support.</li>
     </ul>
 
     <h2>Processing & storage</h2>
-    <p>Audio is recorded locally on your device. If you use features that send audio/text to our servers for transcription or review, the files are transmitted securely and deleted when no longer needed to provide results. Transcripts and session summaries may be stored on device; you can export or delete them inside the app.</p>
-    <p><b>OpenAI API:</b> Prompts and responses you submit are processed by OpenAI. By default, OpenAI may retain API inputs/outputs for up to ~30 days for abuse monitoring and troubleshooting, unless data retention has been disabled in our account settings. OpenAI does not use API data to train its models.</p>
+    <p><b>On-device:</b> accounts, history, and saved transcripts live on your device until you delete them or remove the App. “Delete Account” in Settings removes your local profile, interview history, and Keychain credential for that profile.</p>
+    <p><b>Our server:</b> when you use voice or request AI features, your audio/text may be relayed through our server (hosted on Cloudflare Workers) to our AI provider to return questions and feedback. We use HTTPS and may use certificate pinning. Audio sent for transcription is deleted after processing; minimal logs may be retained briefly for security and abuse monitoring.</p>
+    <p><b>AI provider (OpenAI API):</b> prompts/answers needed to generate questions and feedback are processed by OpenAI. OpenAI’s handling and retention of API data are governed by their policies; see their documentation for current details. We do not permit use of your API data for model training to the extent our account settings allow.</p>
 
     <h2>Sharing</h2>
-    <p>We do not sell your personal data. Limited sharing occurs with service providers (e.g., cloud hosting, error reporting) strictly to operate the service. Limited sharing occurs with OpenAI’s API strictly to provide AI-based feedback.</p>
-
-    <h2>Children</h2>
-    <p>AuzeCS is not directed to children under 13. Do not use the app if you are under the minimum age in your country.</p>
+    <p>We do not sell your data. We share only with service providers as needed to operate the App (e.g., Apple for payments, Cloudflare for hosting, OpenAI for AI processing). These providers process data under our instructions.</p>
 
     <h2>Your choices</h2>
     <ul>
-      <li>Microphone permission can be changed in iOS Settings.</li>
-      <li>Toggle analytics and tracking in the app’s Privacy & Legal screen. 
-        <br><i>“Remove voice share analytics”</i> disables sending anonymous audio usage metrics. 
-        <br><i>“Allow tracking”</i> only applies if you opt in to cross-app tracking; the app functions without it.</li>
-      <li>Export or delete local data in Settings → Privacy & Legal.</li>
-      <li>Request server-side deletion by emailing <a href="mailto:auzecode@outlook.com">auzecode@outlook.com</a>.</li>
+      <li>iOS Settings → Microphone to revoke mic access.</li>
+      <li>In-App Settings → toggle analytics/tracking (off by default).</li>
+      <li>In-App Settings → Delete Account to remove local profile and history.</li>
+      <li>Email us to request deletion of any server-side remnants: <a href="mailto:auzecode@outlook.com">auzecode@outlook.com</a>.</li>
     </ul>
 
+    <h2>Rights</h2>
+    <p>Depending on where you live, you may have rights to access, correct, delete, or port your data, and to object or restrict certain processing. We do not “sell” or “share” personal information for cross-context behavioral advertising. Contact us to exercise rights.</p>
+
+    <h2>Children</h2>
+    <p>The App is not directed to children under 13 (or under 16 in the EU/UK). Do not use the App if you are under the minimum age.</p>
+
     <h2>Security</h2>
-    <p>We use industry-standard security measures. No method of transmission or storage is 100% secure.</p>
+    <p>We use industry-standard safeguards (HTTPS, Keychain for credentials). No method is 100% secure.</p>
+
+    <h2>International transfers</h2>
+    <p>Providers may process data globally. By using the App you consent to these transfers as allowed by law.</p>
 
     <h2>Changes</h2>
-    <p>We may update this policy from time to time. We will change the “Effective” date above and, when appropriate, notify you in-app.</p>
+    <p>We may update this policy. We will update the “Effective” date and, when appropriate, notify you in-app.</p>
 
     <h2>Contact</h2>
     <p>Email <a href="mailto:auzecode@outlook.com">auzecode@outlook.com</a> for privacy questions or requests.</p>
